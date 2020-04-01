@@ -21,7 +21,7 @@ const app = express();
 
 // variables
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const PUBLIC_FILES = path.join(__dirname, 'public');
 const VIEWS = path.join(__dirname, 'views');
 //const GALERIA_PATH = path.join(__dirname, 'galeria');
