@@ -11,6 +11,8 @@ const MongoStore = require('connect-mongo')(session);
 const passport = require('passport');
 const favicon = require('serve-favicon');
 const flash = require('connect-flash');
+
+const { flashConfig } = require('./middlewares');
 // rutas
 //const routers = require('./routes/index');
 //const errorHandler = require('./routes/error');
@@ -37,5 +39,18 @@ app.use(cookieParser());
 
 app.use(flash());
 app.use(morgan('dev'));
+
+// Global Variables
+app.use(flashConfig);
+
+//capturador de errores
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.render('error', {
+    title: err.message,
+    message: err.message,
+    stack: err.stack
+  });
+});
 
 app.listen(PORT, () => console.log(`server ready on http://localhost:${PORT}`));
