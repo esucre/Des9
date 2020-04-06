@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix client",
     "server": "npm start --prefix server",
     "install:client":"npm install --prefix client",
     "install:server":"npm install --prefix client",
-    "init": "concurrently \"npm run install:client\" \"npm run install:server\"",
+    "install": "concurrently \"npm run install:client\" \"npm run install:server\"",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
