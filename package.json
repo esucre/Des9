@@ -1,0 +1,33 @@
+{
+  "name": "des-9",
+  "version": "1.0.0",
+  "description": "global comander",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "client": "npm start --prefix client",
+    "server": "npm start --prefix server",
+    "install:client":"npm install --prefix client",
+    "install:server":"npm install --prefix client",
+    "init": "concurrently \"npm run install:client\" \"npm run install:server\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18Roderick/DES-9.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express"
+  ],
+  "author": "Roderick, Emilio, Aldair",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/18Roderick/DES-9/issues"
+  },
+  "homepage": "https://github.com/18Roderick/DES-9#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
