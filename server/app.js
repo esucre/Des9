@@ -5,17 +5,15 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
-const session = require('express-session');
 const cookieParser = require('cookie-parser');
-const MongoStore = require('connect-mongo')(session);
-const passport = require('passport');
 const favicon = require('serve-favicon');
-const flash = require('connect-flash');
+const helmet = require('helmet');
+const compression = require('compression');
+const cors = require('cors');
 
-const { flashConfig } = require('./middlewares');
 // rutas
 //const routers = require('./routes/index');
-//const errorHandler = require('./routes/error');
+const error404 = require('./routes/errorRouter');
 // inicializaciones
 const app = express();
 
@@ -23,33 +21,32 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 const PUBLIC_FILES = path.join(__dirname, 'public');
-const VIEWS = path.join(__dirname, 'views');
+
 //const GALERIA_PATH = path.join(__dirname, 'galeria');
 // configuraciones
 app.set('port', PORT);
-app.set('views', VIEWS);
-app.set('view engine', 'pug');
 
 //direcciones estaticas
 app.use('/public', express.static(PUBLIC_FILES));
 app.use(favicon(path.join(PUBLIC_FILES, 'images', 'favicon.ico')));
 
+app.use(compression());
+app.use(helmet());
+app.use(cors());
+
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-app.use(flash());
 app.use(morgan('dev'));
 
-// Global Variables
-app.use(flashConfig);
+app.use(error404);
 
 //capturador de errores
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.render('error', {
     title: err.message,
-    message: err.message,
-    stack: err.stack
+    message: err.message
   });
 });
 
