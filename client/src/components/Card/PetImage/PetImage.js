@@ -1,9 +1,10 @@
 import React from 'react';
 import './style.css';
+const loli = require ('./../../../img/loli2.jpg');
 
 const PetImage = ()=>(
     <div  className="petBackground">        
-        <img src="./../../../../public/img/loli.jpg" alt="Loli.jpg"/>
+        <img src={loli} alt="Loli.jpg" className = 'product'/>
     </div>
 );
 

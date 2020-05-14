@@ -30,8 +30,20 @@
   color: #61dafb;
 }
 
-.parrafos{
-  text-align: justify;
+.card-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+ul{
+  list-style:none;
+}
+
+.card-list li{
+  width: 33.3%;
+  padding-bottom: 2rem;
 }
 
 @keyframes App-logo-spin {
