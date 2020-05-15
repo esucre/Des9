@@ -9,9 +9,6 @@ function App() {
         <ul className = 'card-list'>
 
             <li><CardList></CardList></li>
-            <li><CardList></CardList></li>
-            <li><CardList></CardList></li>
-
 
         </ul>
         
