@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './components/Card/index'
+import CardList from './components/CardList/index'
 import './App.css';
 
 function App() {
@@ -8,15 +8,10 @@ function App() {
       <header className="App-header">
         <ul className = 'card-list'>
 
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
-            <li><Card></Card></li>
+            <li><CardList></CardList></li>
+            <li><CardList></CardList></li>
+            <li><CardList></CardList></li>
+
 
         </ul>
         
