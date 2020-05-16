@@ -30,5 +30,8 @@
   "homepage": "https://github.com/18Roderick/DES-9#readme",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }

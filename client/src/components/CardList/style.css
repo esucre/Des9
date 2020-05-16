@@ -1,0 +1,12 @@
+.card-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  
+.card-list li{
+    width: 33.3%;
+    padding-bottom: 2rem;
+  }

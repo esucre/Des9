@@ -4,26 +4,15 @@ import PetInfo from './PetInfo/PetInfo';
 import './style.css';
 import PropTypes from 'prop-types';
 
-class Card extends Component {
-  constructor(props) {
-    super(props);
-    const {data:{image, petData}} = props;
-    this.state = {
-      image,
-      petData,
-    }
-  }
-
-  render() {
-    const {image, petData} = this.state;
-    return (
+const Card = ({data:{image, petData}})=>(
+  
       <div className="card">
         <PetImage image = {image} />
         <PetInfo petData = {petData} />
       </div>
-    );
-  }
-}
+
+
+);
 
 Card.propTypes = {
 
