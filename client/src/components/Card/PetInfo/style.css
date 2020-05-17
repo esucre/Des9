@@ -40,7 +40,7 @@ body{
 
 .petName div .big{
     margin-right: 10px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #333;
     line-height: 1;
 }
@@ -60,6 +60,7 @@ body{
     margin-top: 3px;
     text-transform: capitalize;
     text-align: left;
+    font-size: 1.5rem;
 }
 
 .petName, .description, .color-container, .size-container{
@@ -89,7 +90,7 @@ body{
     width: 50%;
     background-color: #fff;
     z-index: 1;
-    padding: 35px 40px;
+    padding: 20px 40px;
     box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),
     0 -15px 35px rgba(0, 0, 0, 0.1),
     0 15px 35px rgba(0, 0, 0, 0.1);

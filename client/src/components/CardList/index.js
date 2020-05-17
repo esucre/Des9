@@ -5,6 +5,7 @@ const loli = require('./../../../src/img/loli2.jpg');
 
 const datas = [
   {
+    id:1,
     image: 'loli1',
     petData: {
       petName: 'Shinobu',
@@ -14,6 +15,7 @@ const datas = [
     },
   },
   {
+    id:2,
     image: 'loli2',
     petData: {
       petName: 'Taiga',
@@ -24,7 +26,7 @@ const datas = [
   },
 ];
 
-const arrToComponent = (datas) => datas.map((data) => <Card data={data} />);
+const arrToComponent = (datas) => datas.map((data) => <Card key = {data.id} data={data} />);
 
 class CardList extends Component {
   render() {

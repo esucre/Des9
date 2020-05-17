@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PetImage from './PetImage/PetImage';
 import PetInfo from './PetInfo/PetInfo';
 import './style.css';

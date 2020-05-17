@@ -4,18 +4,18 @@ import PropTypes from 'prop-types';
 
 const PetInfo = ({ petData:{ petName, petType, petDescription, petInfo } }) => (
   <div className="info">
-    <div class="petName">
+    <div className ="petName">
       <div>
-        <h1 class="big">{petName}</h1>
+        <h1 className ="big">{petName}</h1>
       </div>
-      <h3 class="small">{petType}</h3>
+      <h3 className ="small">{petType}</h3>
     </div>
-    <div class="description">
-      <h3 class="title">{petDescription}</h3>
-      <p class="text">{petInfo}</p>
+    <div className ="description">
+      <h3 className ="title">{petDescription}</h3>
+      <p className ="text">{petInfo}</p>
     </div>
-    <div class="adopt-terms">
-      <a href="#" class="adopt">
+    <div className ="adopt-terms">
+      <a href="#" className ="adopt">
         ¡Adoptame!
       </a>
       {/* <div class="price">
