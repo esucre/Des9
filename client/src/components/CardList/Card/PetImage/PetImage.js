@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import PropTypes from 'prop-types';
 // const loli = './../../../img/';
-const loli = require ('./../../../img/loli2.jpg');
+const loli = require ('./../../../../img/loli2.jpg');
 
 const PetImage = ({img})=>(
     <div  className="petBackground">       
