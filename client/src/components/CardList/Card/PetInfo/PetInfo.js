@@ -14,15 +14,6 @@ const PetInfo = ({ petData:{ petName, petType, petDescription, petInfo } }) => (
       <h3 className ="title">{petDescription}</h3>
       <p className ="text">{petInfo}</p>
     </div>
-    <div className ="adopt-terms">
-      <a href="#" className ="adopt">
-        ¡Adoptame!
-      </a>
-      {/* <div class="price">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h1>189.99</h1>
-                    </div> */}
-    </div>
   </div>
 );
 PetInfo.propTypes = {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './index.css'
 
 export class index extends Component {
   static propTypes = {};
