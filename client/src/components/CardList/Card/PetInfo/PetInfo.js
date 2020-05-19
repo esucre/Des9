@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './../../style.css';
 import PropTypes from 'prop-types';
 
 const PetInfo = ({ petData:{ petName, petType, petDescription, petInfo } }) => (

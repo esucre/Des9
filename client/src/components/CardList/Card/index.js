@@ -1,7 +1,7 @@
 import React from 'react';
 import PetImage from './PetImage/PetImage';
 import PetInfo from './PetInfo/PetInfo';
-import './style.css';
+import './../style.css';
 import PropTypes from 'prop-types';
 
 const Card = ({data:{image, petData}})=>(
