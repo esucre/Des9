@@ -4,17 +4,17 @@ import PropTypes from 'prop-types';
 // const loli = './../../../img/';
 const loli = require ('./../../../../img/loli2.jpg');
 
-const PetImage = ({img})=>(
-    <div  className="petBackground">       
+const CardImage = ({img})=>(
+    <div  className="background">       
         <img src={loli} alt="Loli.jpg" className = 'petImage'/>
     </div>
     
 );
 
-PetImage.propTypes = {
+CardImage.propTypes = {
 
     img:PropTypes.string,
 
 };
 
-export default PetImage;
+export default CardImage;

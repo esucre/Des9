@@ -1,15 +1,15 @@
 import React from 'react';
-import PetImage from './PetImage/PetImage';
-import PetInfo from './PetInfo/PetInfo';
+import CardImage from './CardImage/CardImage';
+import CardInfo from './CardInfo/CardInfo';
 import InfoButton from './InfoButton/InfoButton'
 import './../style.css';
 import PropTypes from 'prop-types';
 
-const Card = ({data:{image, petData}})=>(
+const Card = ({data:{image, cardData}})=>(
   
       <div className="card">
-        <PetImage image = {image} />
-        <PetInfo petData = {petData} />
+        <CardImage image = {image} />
+        <CardInfo cardData = {cardData} />
         <InfoButton/>
       </div>
 
@@ -20,7 +20,7 @@ Card.propTypes = {
 
   data:PropTypes.shape({
     image:PropTypes.string.isRequired,
-    petData:PropTypes.shape({
+    cardData:PropTypes.shape({
       
     }),
 

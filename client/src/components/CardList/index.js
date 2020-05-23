@@ -9,41 +9,41 @@ const datas = [
   {
     id: 1,
     image: 'loli1',
-    petData: {
-      petName: 'Shinobu',
-      petType: 'Loli',
-      petDescription: 'Mi Loli legal Favorita',
-      petInfo: 'Totalmente legal prro',
+    cardData: {
+      name: 'Shinobu',
+      type: 'Loli',
+      description: 'Mi Loli legal Favorita',
+      info: 'Totalmente legal prro',
     },
   },
   {
     id: 2,
     image: 'loli2',
-    petData: {
-      petName: 'Taiga',
-      petType: 'Loli',
-      petDescription: 'Loli no tan legal',
-      petInfo: 'Totalmente legal prro',
+    cardData: {
+      name: 'Taiga',
+      type: 'Loli',
+      description: 'Loli no tan legal',
+      info: 'Totalmente legal prro',
     },
   },
   {
     id: 3,
     image: 'loli2',
-    petData: {
-      petName: 'Yue',
-      petType: 'Loli',
-      petDescription: 'Loli no tan legal',
-      petInfo: 'Totalmente legal prro',
+    cardData: {
+      name: 'Yue',
+      type: 'Loli',
+      description: 'Loli no tan legal',
+      info: 'Totalmente legal prro',
     },
   },
   {
     id: 4,
     image: 'loli4',
-    petData: {
-      petName: 'Shirayuki',
-      petType: 'Loli',
-      petDescription: 'Loli no tan legal',
-      petInfo: 'Totalmente legal prro',
+    cardData: {
+      name: 'Shirayuki',
+      type: 'Loli',
+      description: 'Loli no tan legal',
+      info: 'Totalmente legal prro',
     },
   },
 ];
@@ -69,9 +69,9 @@ hide() {
       <div>
         <ul>
           <li className="card-list" onClick={this.show.bind(this)}>{arrToComponent(datas)}</li>
-          <Rodal visible={this.state.visible} onClose={this.hide.bind(this)}>
+          {/* <Rodal visible={this.state.visible} onClose={this.hide.bind(this)}>
             <div>Loli</div>
-          </Rodal>
+          </Rodal> */}
         </ul>
       </div>
     );
