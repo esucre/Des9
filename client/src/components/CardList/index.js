@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Card from './Card/index';
 // import './style.css';
 import 'rodal/lib/rodal.css';
-const loli = require('./../../../src/img/loli2.jpg');
+
 
 const datas = [
   {
