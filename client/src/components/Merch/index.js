@@ -9,11 +9,8 @@ const Merch = ()=>(
     <div className="seccion">
         <h2 className ='text-center tamanoh2'>Mercancia</h2>
         <Separador></Separador>
-    <CardList></CardList>
-        
+        <CardList></CardList>        
     </div>
-
-
 );
 
 export default Merch;
