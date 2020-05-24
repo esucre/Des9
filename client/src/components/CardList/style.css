@@ -21,6 +21,26 @@ body{
   background-color: #ffffff;
 }
 
+.seccion{
+  padding: 3rem 0;
+}
+
+
+.seccion p{
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+h2::after{
+  content: '';
+  margin: 0 auto;
+  background-image: url('/Separador-oficial.png');
+  height: 3rem;
+  width: 10rem;
+  display: block;
+}
+
+
 .container{
   min-height: 100vh;
   display: flex;

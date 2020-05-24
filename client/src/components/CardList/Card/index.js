@@ -2,16 +2,19 @@ import React from 'react';
 import CardImage from './CardImage/CardImage';
 import CardInfo from './CardInfo/CardInfo';
 import InfoButton from './InfoButton/InfoButton'
-import './../style.css';
+// import './../style.css';
 import PropTypes from 'prop-types';
 
 const Card = ({data:{image, cardData}})=>(
   
-      <div className="card">
+    <div className='col-md-6 col-sm-12 col-xl-4 p-0 m-0'>
+     <div className="tarjeta ">
         <CardImage image = {image} />
         <CardInfo cardData = {cardData} />
         <InfoButton/>
       </div>
+    </div>
+   
 
 
 );
@@ -20,7 +23,7 @@ Card.propTypes = {
 
   data:PropTypes.shape({
     image:PropTypes.string.isRequired,
-    cardData:PropTypes.shape({
+    tarjetaData:PropTypes.shape({
       
     }),
 

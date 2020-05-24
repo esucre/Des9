@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card/index';
-import './style.css';
+// import './style.css';
 import Rodal from 'rodal';
 import 'rodal/lib/rodal.css';
 const loli = require('./../../../src/img/loli2.jpg');
@@ -48,7 +48,7 @@ const datas = [
   },
 ];
 
-const arrToComponent = (datas) => datas.map((data) => <Card key={data.id} data={data} />);
+const arrToComponent = (datas) => datas.map((data) => <Card  key={data.id} data={data} />);
 
 class CardList extends Component {
 
@@ -66,13 +66,8 @@ hide() {
 }
   render() {
     return (
-      <div>
-        <ul>
-          <li className="card-list" onClick={this.show.bind(this)}>{arrToComponent(datas)}</li>
-          {/* <Rodal visible={this.state.visible} onClose={this.hide.bind(this)}>
-            <div>Loli</div>
-          </Rodal> */}
-        </ul>
+      <div className='row'>
+        {arrToComponent(datas)}
       </div>
     );
   }
