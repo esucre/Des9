@@ -31,23 +31,6 @@ body{
   padding: 1px;
 }
 
-/* .hero{
-  background-image: url(../src/assets/img/GreenLogo-Hero2.png);
-  height: 100vh;
-  background-position: top center;
-  background-size: cover;
-  padding: 1px;
-} */
-
-.contenido-header{
-  padding-top: 4rem;
-}
-@media (min-width: 768px) {
-  .contenido-header{
-    padding-top: 1rem;
-   
-  }
-}
 
 .redes-sociales{
   text-align: left;
@@ -66,60 +49,6 @@ body{
 .redes-sociales a:last-child{
   margin-right: 0;
 }
-
-.informacion-evento{
-  text-align: center;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  .informacion-evento{
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-.informacion-evento p{
-  margin: 0;
-  display: inline;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-.informacion-evento p i{
-  color:#fe4918;
-  font-size: 2.4rem;
-}
-
-.fecha-lugar{
-display: flex;
-justify-content: space-between;
-text-align: center;
-}
-
-h1.nombre-sitio{
-  font-size: 5.9vw;
-  text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
-  margin-bottom: 3px;
-}
-
-@media (min-width: 768px) {
-  h1.nombre-sitio{
-    font-size: 11.5vw;
-    margin: 0;
-    line-height: 1;
-  }
-}
-
-.slogan{
-  text-transform: none!important;
-  padding: 0;
-}
-
-.slogan span{
-  font-weight: bold;
-}
-
 
 .seccion{
   padding: 3rem 0;
