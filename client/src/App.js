@@ -1,6 +1,7 @@
 import React from 'react';
 import Merch from './components/Merch/index';
 import News from './components/News/index';
+import Header from './components/FirstPage/Hero/Hero';
 
 import './App.css';
 
@@ -10,9 +11,10 @@ function App() {
       <header className=""></header>
 
       <div className="container-fluid"></div>
-        <News></News>
-        <Merch></Merch>
-      </div>
+      <Header></Header>
+      <News></News>
+      <Merch></Merch>
+    </div>
   );
 }
 

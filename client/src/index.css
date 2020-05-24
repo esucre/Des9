@@ -4,7 +4,7 @@
 
 html{
   /* box-sizing: border-box; */
-  font-size: 62.5%; 
+
 }
 
 *{
@@ -12,6 +12,7 @@ html{
   padding: 0;
   /* box-sizing: border-box; */
   font-family: 'Poppins', sans-serif;
+  font-size: 62.5%; 
 }
 
 body{
@@ -19,12 +20,114 @@ body{
   background-color: #ffffff;
 }
 
+/*Header*/
+
+.site-header{
+  display: flex;
+  background-image: url(../src/assets/img/GreenLogo-Hero2.png);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  padding: 1px;
+}
+
+/* .hero{
+  background-image: url(../src/assets/img/GreenLogo-Hero2.png);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  padding: 1px;
+} */
+
+.contenido-header{
+  padding-top: 4rem;
+}
+@media (min-width: 768px) {
+  .contenido-header{
+    padding-top: 1rem;
+   
+  }
+}
+
+.redes-sociales{
+  text-align: left;
+  margin: 8rem 7rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.redes-sociales a{
+  color: #246a40;
+  font-size: 5.5rem;
+  align-items: center;
+}
+
+.redes-sociales a:last-child{
+  margin-right: 0;
+}
+
+.informacion-evento{
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .informacion-evento{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.informacion-evento p{
+  margin: 0;
+  display: inline;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.informacion-evento p i{
+  color:#fe4918;
+  font-size: 2.4rem;
+}
+
+.fecha-lugar{
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+
+h1.nombre-sitio{
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 3px;
+}
+
+@media (min-width: 768px) {
+  h1.nombre-sitio{
+    font-size: 11.5vw;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+.slogan{
+  text-transform: none!important;
+  padding: 0;
+}
+
+.slogan span{
+  font-weight: bold;
+}
+
+
 .seccion{
   padding: 3rem 0;
 }
 
 .tamanoh2{
   font-size: 3.4rem;
+  margin: auto;
 }
 
 .seccion p{
@@ -32,8 +135,8 @@ body{
 }
 
 .separador{
-  margin: 0 auto;
-  height: 3rem;
+  margin: -8px auto 40px;
+  height: 2rem;
   width: 10rem;
   display: block;
 }
@@ -158,7 +261,7 @@ body{
 .adopt-terms{
   padding-top: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -170,12 +273,12 @@ body{
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   transition: .5s;
 }
 
 .adopt:hover{
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .tarjeta{
@@ -185,13 +288,14 @@ body{
   flex-direction: column;
   width: 43.9rem;
   margin-top: 1.5rem;
-  margin-bottom: 4rem;;
+  margin-bottom: 5rem;;
 }
 .tarjeta-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem;
+    width: 100%;
   }
 
   
