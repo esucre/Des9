@@ -1,7 +1,8 @@
 import React from 'react';
 import Merch from './components/Merch/index';
 import News from './components/News/index';
-import Header from './components/FirstPage/Hero/Hero';
+import Header from './components/Hero/Hero';
+import NavBar from './components/NavBar/NavBar'
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
 
       <div className="container-fluid"></div>
       <Header></Header>
+      <NavBar></NavBar>
       <News></News>
       <Merch></Merch>
     </div>
