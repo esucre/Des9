@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+  
+  pre_build:
+    commands:
+      - echo Installing dependencies....
+      - yarn
+  build:
+    commands:
+      - echo Testing
+      - yarn start
+      - echo Build
+      - yarn build
+
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build
+  
+
