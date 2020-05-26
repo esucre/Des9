@@ -13,7 +13,7 @@ const NavBar = ()=>(
           
               <nav class="navegacion-principal clearfix">
                 <a href="">Sobre Nosotros</a>
-                {/* <a href="">Noticias</a> */}
+                <a href="">Noticias</a>
                 <a href="">Mercancia</a>
                 <a href="">Metas</a>
                 <a href="registro.html">Donaciones</a>
