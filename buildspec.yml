@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: 0.2
 
 phases:
@@ -22,3 +23,29 @@ artifacts:
   base-directory: build
   
 
+=======
+version: 0.2
+
+phases:
+  install:
+    commands:
+  
+  pre_build:
+    commands:
+      - echo Installing dependencies....
+      - yarn
+  build:
+    commands:
+      - echo Testing
+      - yarn start
+      - echo Build
+      - yarn build
+
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build
+  
+
+>>>>>>> d2ef8008b55830546a59bafa22d378f89fbae156
