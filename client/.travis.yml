@@ -10,7 +10,7 @@ deploy:
  access_key_id: "AKIA37J2EJYRJIN76RWW"
  secret_access_key: "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"
  bucket: "seedsproject"
- local_dir: build
+ local_dir: /build
  skip_cleanup: true
  on:
  branch: master
