@@ -49,6 +49,17 @@ const datas = [
     },
     price:'500.00'
   },
+  {
+    id: 5,
+    image: 'loli4',
+    cardData: {
+      name: 'Koneko',
+      type: 'Loli',
+      description: 'Loli no tan legal',
+      info: 'Totalmente legal prro',
+    },
+    price:'920.00'
+  },
 ];
 
 const arrToComponent = (datas) => datas.map((data) => <Card  key={data.id} data={data} />);
