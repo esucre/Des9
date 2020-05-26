@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d09e1984.chunk.css",
+    "main.js": "/static/js/main.5e125d51.chunk.js",
+    "main.js.map": "/static/js/main.5e125d51.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.98a2b520.js",
+    "runtime-main.js.map": "/static/js/runtime-main.98a2b520.js.map",
+    "static/css/2.9d2670c0.chunk.css": "/static/css/2.9d2670c0.chunk.css",
+    "static/js/2.a5e5b316.chunk.js": "/static/js/2.a5e5b316.chunk.js",
+    "static/js/2.a5e5b316.chunk.js.map": "/static/js/2.a5e5b316.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.359d4c4618a31557cac2db6075e6996f.js": "/precache-manifest.359d4c4618a31557cac2db6075e6996f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9d2670c0.chunk.css.map": "/static/css/2.9d2670c0.chunk.css.map",
+    "static/css/main.d09e1984.chunk.css.map": "/static/css/main.d09e1984.chunk.css.map",
+    "static/js/2.a5e5b316.chunk.js.LICENSE.txt": "/static/js/2.a5e5b316.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/GreenLogo-Hero2.15be87e9.png",
+    "static/media/loli.png": "/static/media/loli.c70f61b7.png",
+    "static/media/separador.png": "/static/media/separador.9f2cbbb8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98a2b520.js",
+    "static/css/2.9d2670c0.chunk.css",
+    "static/js/2.a5e5b316.chunk.js",
+    "static/css/main.d09e1984.chunk.css",
+    "static/js/main.5e125d51.chunk.js"
+  ]
+}
