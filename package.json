@@ -5,17 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm run client\"",
+    "build": "build client/src/index.html",
     "client": "npm start --prefix client",
     "server": "npm start --prefix server",
     "install:client": "npm install --prefix client",
     "install:server": "npm install --prefix client",
     "install:all": "concurrently \"npm run install:client\" \"npm run install:server\"",
     "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/18Roderick/DES-9.git"
   },
   "keywords": [
     "node",
@@ -25,9 +22,7 @@
   "author": "Roderick, Emilio, Aldair",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/18Roderick/DES-9/issues"
   },
-  "homepage": "https://github.com/18Roderick/DES-9#readme",
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
