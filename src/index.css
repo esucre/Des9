@@ -59,16 +59,8 @@ body{
   padding: 0.8rem 0;
   margin-top: 3px;
   position: sticky;
-  z-index:4;
+  z-index:2;
   top:0;
-}
-
-.fixed{
-  position: sticky;
-  width: 100%;
-  top: 0;
-  left:0;
-  z-index: 2;
 }
 
 .logo{
