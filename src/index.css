@@ -24,10 +24,13 @@ body{
 .site-header{
   display: flex;
   background-image: url(../src/assets/img/GreenLogo-Hero2.png);
-  height: 100vh;
   background-position: top center;
+  height: 100vh;
   background-size: cover;
   padding: 1px;
+  /* position: relative;
+  top: 30px;
+  left: 90px; */
 }
 
 
@@ -36,6 +39,8 @@ body{
   margin: 8rem 7rem;
   display: flex;
   flex-direction: column;
+  /* position: absolute;
+  top: 1px; */
   
 }
 
@@ -51,27 +56,11 @@ body{
 
 .barra{
   background-color: #adcc3b;
-  padding: 1.5rem 0;
+  padding: 0.8rem 0;
   margin-top: 3px;
   position: sticky;
   z-index:4;
   top:0;
-}
-
-/*--Registro--*/
-.registro{
-  font-size: 1.5rem;
-}
-
-.registro h3 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 2rem 0 0 0;
-}
-
-.registro label{
-  margin-bottom: .5rem;
-  font-weight: bold;
 }
 
 .fixed{
@@ -87,25 +76,137 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+
 .logo{
+  width: 80%;
+  float: left;
+}
+.logo img{
+  width: 55%;
+}
+
+@media (min-width: 768px) {
+  .logo{
+    width: 70%;
+  }
+}
+
+/*Navegacion Principal*/
+
+.navegacion-movil{
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+.navegacion-principal{
+  display: none;
+  width: 100%;
+}
+
+.navegacion-principal a{
+  font-family:'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  transition: all .5s ease;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.navegacion-principal a:hover{
+  background-color: #246a40;
+}
+
+.navegacion-principal a:last-child{
+  border: 2px solid  #246a40;
+  color:  #246a40;
+}
+
+.navegacion-principal a:last-child:hover{
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navegacion-desktop{
+    display: flex;
+    align-items: center;
+  }
+  .navegacion-principal{
+    width: 67%;
+    margin-left: 100px;
+    text-align: right;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .navegacion-principal a{
+    
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0 1rem!important;
+    
+  }
+ 
+
+  .navegacion-principal a:last-child{
+    margin-right: 0;
+  }
+  
+}
+
+/*Menu Movil*/
+.menu-movil{
+  width: 6rem;
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+  
+}
+
+.menu-movil:hover{
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-movil{
+    display: none;
+  }
+
+}
+
+.menu-movil span{
+  height: .8rem;
+  margin-bottom: .6rem;
+  background-color: white;
+  display: block;
+}
+/* .logo{
   width: 15%;
 }
 .logo img{
-  width: 100%;
+  width: 200%;
 }
-/* 
+
 @media (min-width: 768px) {
   .logo{
-    width: 30%;
+    width: 15%;
+  }
+  .logo img{
+    width: 290%;
+    margin-left: 7px;
   }
 } */
 
-/*Navegacion Principal*/
-/*.navegacion{
-margin-left: 4rem;
-}*/
 
-.navegacion-principal{
+/* .navegacion-principal{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,6 +263,55 @@ margin-left: 4rem;
   
 }
 
+.navegacion-movil{
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+.menu-movil{
+  width: 6rem;
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+  
+}
+
+.menu-movil:hover{
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-movil{
+    display: none;
+  }
+
+} */
+/* 
+.menu-movil span{
+  height: .8rem;
+  margin-bottom: .6rem;
+  background-color: white;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navegacion-desktop{
+    display: flex;
+    align-items: center;
+  }
+  .navegacion-principal{
+    width: 67%;
+    margin-top: 4px;
+    text-align: right;
+    font-size: 1.5rem;
+    display: block;
+  }
+} */
+
 
 .seccion{
   padding: 3rem 0;
@@ -212,7 +362,23 @@ margin-left: 4rem;
   vertical-align:middle;
 }
 
-
+.petImage {
+  height: 300px;
+  overflow: hidden;
+  }
+   
+  .petImage img {
+  width: 100%;
+  height: auto;
+  }
+   
+  @supports (object-fit: cover) {
+  .petImage img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  }
+  }
 
 
 .name{
@@ -243,7 +409,7 @@ margin-left: 4rem;
 .name .small{
   font-weight: 500;
   color: #444;
-  margin-top: 3px;
+  margin-top: -3px;
   text-transform: capitalize;
   text-align: left;
   font-size: 1.5rem;
@@ -267,8 +433,12 @@ margin-left: 4rem;
 
 .text{
   color: #555;
-  font-size: 17px;
+  font-size: 12px!important;
   text-align: left;
+}
+
+.leermas{
+  font-size: 12px;
 }
 
 
@@ -329,14 +499,11 @@ margin-left: 4rem;
   align-items: center;
   flex-direction: column;
   width: 43.9rem;
-  margin-top: 1.5rem;
+  margin-top: -2.5rem;
   margin-bottom: 5rem;;
+
 }
 .tarjeta-list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
     width: 100%;
   }
 
