@@ -130,7 +130,7 @@ body{
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navegacion-desktop{
     display: flex;
     align-items: center;
@@ -175,7 +175,7 @@ body{
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-movil{
     display: none;
   }
@@ -504,6 +504,10 @@ body{
 
 }
 .tarjeta-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
     width: 100%;
   }
 
