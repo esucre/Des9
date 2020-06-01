@@ -26,7 +26,7 @@ class Card extends Component {
         className="col-md-6 col-sm-12 col-xl-4 p-0 m-0"
         onClick={handleOnShow}
       >
-        <div className="tarjeta ">
+        <div className="tarjeta col-12 ">
           <CardImage image={image} />
           <CardInfo cardData={cardData} />
           <InfoButton price={price} />
