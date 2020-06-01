@@ -497,6 +497,33 @@ body{
   align-items: center;
 }
 
+@media (max-width: 500px) {
+  .adopt-terms{
+    padding-top: 0px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price{
+    display: none;
+  }
+
+  .adopt{
+    padding: .7rem 1rem;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .5s;
+    display: block;
+    text-align: center;
+  }
+}
+
 .adopt{
   padding: .7rem 1rem;
   background-color: var(--primary);
@@ -526,12 +553,9 @@ body{
 
 }
 .tarjeta-list{
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem; */
     padding: 2rem;
     width: 100%;
+    margin: 0;
   }
 
 /*   
