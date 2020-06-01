@@ -520,7 +520,9 @@ body{
   flex-direction: column;
   width: 43.9rem;
   margin-top: -2.5rem;
-  margin-bottom: 5rem;;
+  margin-bottom: 5rem;
+  margin: auto;
+  padding-bottom: 35px;
 
 }
 .tarjeta-list{
