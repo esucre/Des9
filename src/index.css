@@ -526,12 +526,9 @@ body{
 
 }
 .tarjeta-list{
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem; */
     padding: 2rem;
     width: 100%;
+    margin: 0;
   }
 
 /*   
