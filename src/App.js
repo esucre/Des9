@@ -13,7 +13,7 @@ function App() {
       <header className=""></header>
 
       <div className="container-fluid"></div>
-      <Header></Header>
+      {/* <Header></Header> */}
       <NavBar></NavBar>
       <News></News>
       <Merch></Merch>
