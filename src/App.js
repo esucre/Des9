@@ -1,24 +1,22 @@
-import React from 'react';
-import Merch from './components/Merch/index';
-import News from './components/News/index';
-import Header from './components/Hero/Hero';
-import NavBar from './components/NavBar/NavBar';
-import GoalBar from './components/GoalBar/GoalBar';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import './App.css';
+import Header from './components/Hero/Hero';
+
+import NavBar from './components/NavBar/NavBar';
+
+import Switcher from './components/Switch';
+
+import InicioSesion from './components/InicioSesion/InicioSesion';
 
 function App() {
   return (
-    <div className="">
-      <header className=""></header>
-
-      <div className="container-fluid"></div>
-      {/* <Header></Header> */}
+    <Fragment>
+      <Header></Header>
       <NavBar></NavBar>
-      <News></News>
-      <Merch></Merch>
- 
-    </div>
+      <Switcher></Switcher>
+      <InicioSesion></InicioSesion>
+    </Fragment>
   );
 }
 
