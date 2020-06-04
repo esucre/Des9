@@ -15,7 +15,7 @@ function App() {
       <Header></Header>
       <NavBar></NavBar>
       <Switcher></Switcher>
-      {/* <InicioSesion></InicioSesion> */}
+      <InicioSesion></InicioSesion>
     </Fragment>
   );
 }
