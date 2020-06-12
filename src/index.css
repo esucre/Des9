@@ -52,6 +52,7 @@ li.menu_list {
   height: 85px;
   width: 100%;
   position: relative;
+  margin-right: -1px;
 }
 li.menu_list .front,
 a.side {
@@ -97,7 +98,14 @@ li.menu_list:hover .front {
 a.side {
   transform-origin: 0 0 65px;
   font-size: 10px;
-
+  transform: none;
+  display: none;
+}
+li.menu_list:hover a.side {
+  transform: none;
+}
+li.menu_list:hover .front {
+  transform: none;
 }
 
 }
@@ -1040,6 +1048,10 @@ margin-top: 10%
 }
 
 @media (max-width: 540px) {
+
+  .pu-ul{
+    display: block;
+    }
   .rdContenedor{
     box-shadow: none !important;
   }
