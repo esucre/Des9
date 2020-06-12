@@ -2,7 +2,8 @@ import React from 'react';
 const LogoNombre = require('../../assets/img/LogoNombre.png');
 
 const NavBar = () => (
-<div className="barra col-12">
+
+  <div className="barra col-12">
       <div className="navegacion-desktop">
         <div className="navegacion-movil">
           <div className="logo">
@@ -16,16 +17,17 @@ const NavBar = () => (
           </div>
         </div>
 
-        <nav className="navegacion-principal clearfix">
+        <nav class="navegacion-principal clearfix">
           <a href="">Sobre Nosotros</a>
           <a href="">Noticias</a>
           <a href="">Mercancia</a>
           <a href="">Metas</a>
           <a href="registro.html">Donaciones</a>
+          <a href="">Iniciar sesión</a>
+          <a><i class="fas fa-shopping-cart"></i></a>
         </nav>
       </div>
-    </div>
-
+  </div>
 );
 
 export default NavBar;

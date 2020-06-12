@@ -13,6 +13,8 @@ import PerfilUsuario from './components/PerfilUsuario/PerfilUsuario';
 
 import DireccionesUsuario from './components/DireccionesUsuario/DireccionesUsuario';
 
+import NavBarPrueba from './components/NavBarPrueba/NavBarPrueba';
+
 function App() {
 
   const infoUsuario = {
@@ -26,9 +28,10 @@ function App() {
   }
   return (
     <Fragment>
-      <NavBar></NavBar>
-      <Header></Header>      
-      <Switcher></Switcher>
+      {/* <NavBar></NavBar> */}
+      <NavBarPrueba></NavBarPrueba>
+      <Header></Header>    
+      <Switcher></Switcher>      
       <InicioSesion></InicioSesion>
       <PerfilUsuario infoUsuario = {infoUsuario}></PerfilUsuario>
       <DireccionesUsuario></DireccionesUsuario>

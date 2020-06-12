@@ -1,5 +1,6 @@
 import React from 'react';
 import herobanner from './../../assets/img/GreenLogo-Hero.png';
+import NavBarPrueba from '../NavBarPrueba/NavBarPrueba';
 
 
 
@@ -13,7 +14,9 @@ const Hero = () =>(
           <a href="#" className=""><i className="fab fa-youtube"></i></a>
           <a href="#" className=""><i className="fab fa-instagram"></i></a>
         </div>
-      <img className = 'imagenhero img-fluid' src = {herobanner}/>        
+      <img className = 'imagenhero img-fluid' src = {herobanner}/>  
+
+      {/* <NavBarPrueba></NavBarPrueba>       */}
 
   </div>
 
