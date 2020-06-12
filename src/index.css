@@ -984,6 +984,7 @@ margin-top: 10%
 .perfilusuario-contenedor{
   width: auto;
   margin: auto 40px ;
+  height: auto;
   padding-top: 65px;
   display: flex;
 }
@@ -1068,7 +1069,26 @@ margin-top: 10%
   .pu-imagenPerfil{
     width: 15%;
   }
+
+  .pu-contenedorinfo{
+    height: auto;
+  }
+
+  .perfilusuario-labels{
+    height: auto;
+  }
+
+  .pu-contenedorRecompensas{
+    height: auto;
+  }
 }
+
+/* @media (max-height: 400px) {
+  
+  .perfilusuario-contenedor{
+    height: auto;
+  }
+} */
 
 
 /*----------RecompensaUsuario----------*/
@@ -1096,6 +1116,27 @@ margin-top: 10%
 .rdInformacionSellos{
   flex-basis: 50%;
   display: flex;
+}
+
+@media (max-width: 540px) {
+
+  .rdInformacion{
+    flex-basis: 100%;
+  }
+  
+  .rdInformacionDescripcion{
+    flex-basis: 50%;
+    height: auto;
+  }
+  .rdInformacionSellos{
+    flex-basis: 50%;
+    display: flex;
+    height: auto;
+  }
+
+  .rdProducto{
+    display: none;
+  }
 }
 
 .sellosRecompensas{
