@@ -1056,7 +1056,7 @@ margin-top: 10%
 @media (max-width: 540px) {
 
   .perfilusuario{
-    height: 100vh;
+    height: 100%;
     width: 85%;
   }
   .pu-ul{
@@ -1070,10 +1070,6 @@ margin-top: 10%
     padding-top: 10px;
   }
 
-  .pu-imagenPerfil{
-    width: 15%;
-  }
-
   .pu-contenedorinfo{
     height: auto;
   }
@@ -1085,14 +1081,20 @@ margin-top: 10%
   .pu-contenedorRecompensas{
     height: auto;
   }
-}
 
-/* @media (max-height: 400px) {
-  
-  .perfilusuario-contenedor{
-    height: auto;
+  .perfilusuario-banner img{
+    position:inherit;
   }
-} */
+
+  .perfilusuario-contenedor{
+    margin: auto 30px ;
+  }
+
+  .pu-imagenPerfil {
+    margin: -57px 30px;
+    width: 20%;
+  }
+}
 
 
 /*----------RecompensaUsuario----------*/
