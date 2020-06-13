@@ -58,7 +58,7 @@ a.side {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 86px;
+  height: 70px;
   width: 100%;
   padding: 30px;
   position: absolute;
@@ -76,7 +76,7 @@ li.menu_list .front {
 a.side {
   background-color: var(--primarygreen);
   color: white;
-  transform-origin: 0 0 85px;
+  transform-origin: 0 0 70px;
   transform: rotateX(90deg);
   font-size: 13px;
 }
