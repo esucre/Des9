@@ -5,7 +5,7 @@ import LogoNavBar from "../../assets/img/LogoNombre.png";
 const NavbBarPrueba = () => (
   <ul class="menu">
     <li class="menu_list">
-      <Link to="/">
+      <Link to="/index.html">
         <span class="front">
           <img className="logo" src={LogoNavBar} />
         </span>

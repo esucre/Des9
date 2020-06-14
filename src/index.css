@@ -37,6 +37,7 @@ body{
 }
 
 
+
 /*----------NavBarPrueba----------*/
 
 
@@ -133,13 +134,13 @@ a.side {
 
 .site-header{
   display: flex;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   /* margin-top: -36rem; */
 }
 
 .imagenhero{
-  height: 100vh;
+  height: 84vh;
   object-fit: contain;
   width: 100%;
 }
