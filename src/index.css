@@ -87,6 +87,11 @@ li.menu_list:hover .front {
   transform: rotateX(-90deg);
 }
 
+li.menu_list:first-child:not(hover) .front {
+  transform: none;
+  padding: 30px 0;
+}
+
 
 @media (max-width: 850px) {
 
@@ -113,6 +118,12 @@ a.side {
   height: 40px;
 }
 
+}
+
+@media (max-width: 540px) {
+  .logo{
+    width: 100%!important;
+  }
 }
 
 
@@ -494,7 +505,7 @@ a.side {
 
 
 .seccion{
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
 }
 
 .tamanoh2{
@@ -761,7 +772,7 @@ a.side {
 
 }
 .tarjeta-list{
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     margin: 0;
   }
