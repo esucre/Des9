@@ -32,11 +32,19 @@ const NavbBarPrueba = () => {
       </li>
 
       <li className="menu_list">
-        <LinkWrapper route="/Login">
+        <LinkWrapper route="/iniciosesion">
           <span className="front fas fa-user-astronaut"></span>
 
-          <Link to="/Login" className="side">
+          <Link to="/iniciosesion" className="side">
             Inicio sesión
+          </Link>
+        </LinkWrapper>
+      </li>
+      <li className="menu_list">
+        <LinkWrapper route="/panelusuario">
+          <span className="front fas fa-user"></span>
+          <Link to="/car" className="side">
+            Perfil
           </Link>
         </LinkWrapper>
       </li>
@@ -57,9 +65,9 @@ const NavbBarPrueba = () => {
         </LinkWrapper>
       </li>
       <li className="menu_list">
-        <LinkWrapper route="/Merch">
+        <LinkWrapper route="/mercancia">
           <span className="front fas fa-briefcase"></span>
-          <Link to="/Merch" className="side">
+          <Link to="/mercancia" className="side">
             Mercancía
           </Link>
         </LinkWrapper>
@@ -74,18 +82,9 @@ const NavbBarPrueba = () => {
         </LinkWrapper>
       </li>
       <li className="menu_list">
-        <LinkWrapper route="/car">
+        <LinkWrapper route="/carrito">
           <span className="front fas fa-shopping-cart"></span>
-          <Link to="/car" className="side">
-            Carrito
-          </Link>
-        </LinkWrapper>
-      </li>
-
-      <li className="menu_list">
-        <LinkWrapper route="/panelusuario">
-          <span className="front fas fa-shopping-cart"></span>
-          <Link to="/car" className="side">
+          <Link to="/carrito" className="side">
             Carrito
           </Link>
         </LinkWrapper>
